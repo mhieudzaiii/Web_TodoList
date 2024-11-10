@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--khai báo tương thích với trình duyệt internet explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--đặt chiều rộng của trang bằng chiều rộng của thiết bị-->
+    <link rel="stylesheet" href="./style.css">  <!--kết nối với css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--kết nối tới thư viện font awesome-->
+    <title>Todo list</title>
+</head>
+<body>
+    <div class="wrapper"> <!--tạo 1 khung bao quanh nội dung bên trong-->
+        <header class="header-title">Task list</header> <!--chứa tiêu đề trang web-->
+        <div class="inputField">  <!--tạo ra khoảng trắng và nút-->
+            <input type="text" placeholder="Nhập Công Việc Mới"> <!--cho phép người dùng nhập văn bản, nếu để trống sẽ có khoảng mờ-->
+            <button> <i class="fas fa-plus"></i> </button> <!--tạo ra một nút để thêm cv mới, nút cộng-->
+        </div>
+        <h4>Today's Task</h4><!--tiêu đề nhỏ hơn-->
+        <ul class="todoList">  <!--tạo ra 1 ds ko có thứ tự-->
+            
+        </ul>
+        <div class="footer"> <!--chứa thông tin về số lượng công việc còn lại-->
+            <span>You have <span class="pendingTasks"></span> pending tasks</span> <!--hiển thi ttin số cv còn lại-->
+            <button>Clear All</button> 
+          </div>
+    </div>
+    <script src="./main.js"></script> <!--liên kết một tệp jvs-->
+</body>
+</html>
